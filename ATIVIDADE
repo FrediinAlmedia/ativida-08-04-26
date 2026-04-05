@@ -1,0 +1,115 @@
+#include <stdio.h>
+
+int main() {
+    int idade;
+    
+    printf("Digite a idade: ");
+    scanf("%d", &idade);
+
+    if (idade >= 18) {
+        printf("Maior de idade");
+    } else {
+        printf("Menor de idade");
+    }
+
+    return 0;
+}
+
+#include <stdio.h>
+
+int main() {
+    int n;
+
+    printf("Digite um numero: ");
+    scanf("%d", &n);
+
+    if (n > 0) {
+        printf("Positivo");
+    } else if (n < 0) {
+        printf("Negativo");
+    } else {
+        printf("Zero");
+    }
+
+    return 0;
+}
+
+#include <stdio.h>
+
+int main() {
+    float nota, freq;
+
+    printf("Digite a nota: ");
+    scanf("%f", &nota);
+
+    printf("Digite a frequencia (%%): ");
+    scanf("%f", &freq);
+
+    if (nota >= 7 && freq >= 75) {
+        printf("Aprovado");
+    } else {
+        printf("Reprovado");
+    }
+
+    return 0;
+}
+
+#include <stdio.h>
+
+int main() {
+    int idade;
+
+    printf("Digite a idade: ");
+    scanf("%d", &idade);
+
+    if (idade >= 60) {
+        printf("Idoso");
+    } else if (idade >= 18) {
+        printf("Adulto");
+    } else {
+        printf("Menor");
+    }
+
+    return 0;
+}
+
+#include <stdio.h>
+
+int main() {
+    float temp;
+
+    printf("Digite a temperatura: ");
+    scanf("%f", &temp);
+
+    if (temp > 30) {
+        printf("Calor - Va de camiseta");
+    } else {
+        printf("Frio - Melhor usar outra roupa");
+    }
+
+    return 0;
+}
+
+#include <stdio.h>
+
+int main() {
+    int dinheiro, emprestimo;
+
+    printf("Tem dinheiro? (1 = sim, 0 = nao): ");
+    scanf("%d", &dinheiro);
+
+    if (dinheiro == 1) {
+        printf("Compra");
+    } else {
+        printf("Consegue emprestimo? (1 = sim, 0 = nao): ");
+        scanf("%d", &emprestimo);
+
+        if (emprestimo == 1) {
+            printf("Compra");
+        } else {
+            printf("Nao compra");
+        }
+    }
+
+    return 0;
+}
