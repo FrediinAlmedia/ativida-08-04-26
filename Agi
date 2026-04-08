@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+int main() {
+
+    float kwh, preco, total;
+    char tipo;
+
+    printf("Digite a quantidade de kWh consumida: ");
+    scanf("%f", &kwh);
+
+    printf("Digite o tipo de instalacao (R - Residencial, C - Comercial, I - Industrial): ");
+    scanf(" %c", &tipo);
+
+    if(tipo == 'R' || tipo == 'r') {
+
+        if(kwh <= 500)
+            preco = 0.40;
+        else
+            preco = 0.65;
+
+    }
+
+    else if(tipo == 'C' || tipo == 'c') {
+
+        if(kwh <= 1000)
+            preco = 0.55;
+        else
+            preco = 0.60;
+
+    }
+
+    else if(tipo == 'I' || tipo == 'i') {
+
+        if(kwh <= 5000)
+            preco = 0.55;
+        else
+            preco = 0.60;
+
+    }
+
+    else {
+        printf("Tipo de instalacao invalido.\n");
+        return 0;
+    }
+
+    total = kwh * preco;
+
+    printf("Valor a pagar: R$ %.2f\n", total);
+
+    return 0;
+}
